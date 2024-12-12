@@ -22,13 +22,13 @@ This is a simple React-based frontend project built using Vite. The project disp
 1. **Clone the repository**:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/07ronak/Ayuvya.git
    ```
 
 2. **Navigate to the project directory**:
 
    ```bash
-   cd <project-directory>
+   cd Ayuvya
    ```
 
 3. **Install dependencies**:
@@ -86,19 +86,9 @@ const sections = ["Strength", "Mobility", "Drills"];
 - The active section enlarges, while the others shrink.
 - The state remains active even after moving the mouse away.
 
-## Example Screenshot
+## Description
 
-_(Add a screenshot of the app here)_
-
-## Future Enhancements
-
-- Add transitions for smoother animations.
-- Make the app more responsive for smaller screens.
-- Include additional sections or interactivity.
-
-## License
-
-This project is licensed under the MIT License.
+This project is was a assignment project under AYUVYA.
 
 ---
 

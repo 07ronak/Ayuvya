@@ -3,7 +3,7 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import "./App.css";
 
 function App() {
-  const [active, setActive] = useState(2); // By default, the middle element is active
+  const [active, setActive] = useState(1); // By default, the middle element is active
 
   const sections = ["Strength", "Mobility", "Drills"];
 

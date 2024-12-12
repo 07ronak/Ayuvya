@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+}
+
+.child {
+  flex-grow: 1;
+  height: 20rem; /* fixed height */
+  position: relative; /* For positioning the text and icon inside */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease;
+}
+
+.child span {
+  position: absolute; /* Position relative to the child div */
+  top: 10px;
+  left: 10px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1; /* Ensure text stays above the background */
+}
+
+.child .icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: white; /* Icon color */
+  border-radius: 50%; /* Round background */
+  padding: 5px;
+  display: none; /* Initially hidden */
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.child:hover .icon {
+  display: block; /* Show the icon on hover */
+  opacity: 1;
+}
+
+.child:hover {
+  text-decoration: none;
+}
+
+.child:nth-child(1) {
+  background-image: url("/strength.webp");
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.child:nth-child(2) {
+  background-image: url("/mobility.jpg");
+}
+
+.child:nth-child(3) {
+  background-image: url("/drills.webp");
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.child.active {
+  flex-grow: 3;
+}
+.child:not(.active) {
+  flex-grow: 0.7;
+}
